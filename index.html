@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Mobile responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Skywave</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ MAIN CSS LINK (IMPORTANT) -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+
+<!-- Favicon icons -->
+<!-- Favicon & mobile icons using main logo -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/skywave_logo.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/skywave_logo.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/skywave_logo.png">
+
+<meta name="theme-color" content="#0e4c8a">
+
+
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <div class="container header-inner">
+        <!-- Logo (left) -->
+        <a href="index.html" class="logo">
+          <img src="assets/img/skywave_logo.png" alt="Skywave Logo" />
+        </a>
+
+        <!-- Navigation (right) -->
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="our-services.html">Our Services</a>
+          <a href="broadcasting.html">Broadcasting</a>
+          <a href="production.html">Production</a>
+          <a href="equipment.html">Equipment</a>
+          <a href="about-us.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+    <!-- ===== END HEADER ===== -->
+
+    <!-- ===== HERO MESSAGE SECTION ===== -->
+    <section class="hero-message">
+      <div class="hero-message-inner">
+        <!-- Logo -->
+        <img
+          src="assets/img/skywave_logo.png"
+          alt="Skywave Logo"
+          class="hero-logo"
+        />
+
+        <!-- Text -->
+        <h1 class="hero-text">
+          THE WORLD IS A SMALL TOWN.<br />
+          AND SKYWAVE IS LINKING IT TOGETHER WITH<br />
+          STRONG BONDS.
+        </h1>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="services-container">
+        <!-- Left blue panel -->
+        <div class="services-menu">
+          <h2>OUR SERVICES</h2>
+
+          <ul id="servicesList">
+            <li class="active" data-service="satellite">SATELLITE</li>
+            <li data-service="broadcast">BROADCAST</li>
+            <li data-service="production">PRODUCTION</li>
+            <li data-service="equipment">EQUIPMENT</li>
+          </ul>
+        </div>
+
+        <!-- Right content -->
+        <div class="services-content">
+          <img
+            id="serviceImg"
+            src="assets/img/satellite.jpeg"
+            alt="Satellite"
+          />
+
+          <h3 id="serviceTitle">Satellite</h3>
+
+          <p id="serviceDesc">
+            A full satellite coverage in the MENA region with access to major
+            satellites worldwide.
+          </p>
+
+          <a id="serviceBtn" href="our-services.html" class="btn-primary"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED SERVICES ===== -->
+    <section class="featured-services">
+      <div class="container featured-grid">
+        <!-- Card 1 -->
+        <div class="service-card">
+          <img src="assets/img/production.jpeg" alt="High-end media services" />
+
+          <div class="service-card-body">
+            <h3>High-end media services</h3>
+
+            <p>
+              Providing full production services for all genres of media and
+              dubbing with a variety of multi-language professional voiceovers.
+            </p>
+
+            <a href="our-services.html" class="btn-primary">Find out More</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <img
+            src="assets/img/satellite.jpeg"
+            alt="Major satellite distribution"
+          />
+
+          <div class="service-card-body">
+            <h3>Major satellite distribution</h3>
+
+            <p>
+              The prime leading company in providing frequency services
+              worldwide.
+            </p>
+
+            <a href="our-services.html" class="btn-primary">Find out More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Put this BEFORE </body> OR keep it in your main.js -->
+    <script src="assets/js/services.js"></script>
+
+    <!-- ===== FOOTER PLACEHOLDER ===== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <!-- Logo -->
+        <img
+          src="assets/img/skywave_logo.png"
+          alt="Skywave Logo"
+          class="footer-logo"
+        />
+
+        <!-- Title -->
+        <h2>CONTACT US</h2>
+
+        <!-- Address -->
+        <p class="footer-text">
+          Corniche El Mazraa – Wata El Msaytbeh<br />
+          Saeb Salam Street – Tayyara Building – 2nd Floor<br />
+          Beirut – Lebanon
+        </p>
+
+        <!-- Phone -->
+        <p class="footer-email">+961 79 715 151</p>
+
+        <!-- Copyright -->
+        <p class="footer-copy">© 2011 Skywave. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

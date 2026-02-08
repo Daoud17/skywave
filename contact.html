@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Skywave</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Icons using same logo -->
+  <link rel="apple-touch-icon" href="assets/img/skywave_logo.png">
+  <link rel="icon" href="assets/img/skywave_logo.png">
+  <meta name="theme-color" content="#0e4c8a">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header-inner">
+
+      <a href="index.html" class="logo">
+        <img src="assets/img/skywave_logo.png" alt="Skywave Logo">
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="broadcasting.html">Broadcasting</a>
+        <a href="production.html">Production</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ===== HERO ===== -->
+  <section class="contact-hero">
+    <div class="contact-hero-inner">
+
+      <img src="assets/img/skywave_logo.png" alt="Skywave Logo" class="contact-hero-logo">
+
+      <h1>CONTACT SKYWAVE</h1>
+
+    </div>
+  </section>
+
+
+  <!-- ===== CONTACT CONTENT ===== -->
+  <section class="contact-content">
+    <div class="container contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+
+        <p>
+          Corniche El Mazraa – Wata El Msaytbeh<br>
+          Saeb Salam Street – Tayyara Building – 2nd Floor<br>
+          Beirut – Lebanon
+        </p>
+
+        <p>
+          Phone:
+          <a href="tel:+96179715151">+961 79 715 151</a>
+        </p>
+
+        <p>
+          Email:
+          <a href="mailto:info@skywave.com">info@skywave.com</a>
+        </p>
+      </div>
+
+
+      <!-- Contact Form -->
+      <form class="contact-form" id="contactForm">
+
+        <h2>Send a Message</h2>
+
+        <label>
+          Full Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary">Send</button>
+
+        <!-- Success message -->
+        <p class="form-success" id="formSuccess">
+          ✔ Message sent successfully!
+        </p>
+
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <img src="assets/img/skywave_logo.png" alt="Skywave Logo" class="footer-logo">
+
+      <h2>CONTACT US</h2>
+
+      <p class="footer-text">
+        Corniche El Mazraa – Wata El Msaytbeh<br>
+        Saeb Salam Street – Tayyara Building – 2nd Floor<br>
+        Beirut – Lebanon
+      </p>
+
+      <p class="footer-email">+961 79 715 151</p>
+
+      <p class="footer-copy">© 2011 Skywave. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+
+  <!-- ===== JS SUCCESS MESSAGE ===== -->
+  <script>
+    const form = document.getElementById("contactForm");
+    const successMsg = document.getElementById("formSuccess");
+
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+
+      if(form.checkValidity()){
+        successMsg.style.display = "block";
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
